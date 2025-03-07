@@ -6,10 +6,6 @@ type OrderService interface {
 	CreateOrder(order Order) error
 }
 
-type OrderRepository interface {
-	Save(order Order) error
-}
-
 type OrderServiceImpl struct {
 	repo OrderRepository
 }
